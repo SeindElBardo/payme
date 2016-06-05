@@ -10,18 +10,23 @@ menu = """
 6 - Status
 """
 
+menuError = """
+Eso no es una opción válida.
+Prueba otra vez.
+"""
+
 nuevoMoroso = """
 ¿Cómo se llama la nueva persona?
 """ 
 
 def nuevoMorosoSuccess(nombre):
 	text = nombre + """
-	se ha añadido a la lista de personas exitosamente.
+	se ha añadido a la lista de personas.
 	"""
 
 hacerCompra1 = """
 Introduce los datos de la compra:
-<Artículos>, <Precio>, <Comprador>, <Pagador>, <Gasto>.
+<Artículos>; <Precio>; <Comprador>; <Pagador>; <Gasto>.
 """
 
 #Aquí irian los datos de la compra guiada
@@ -32,7 +37,7 @@ Indica tu deuda a pagar de la siguiente manera:
 <Pagador>, <Cantidad>, <Cobrador>.
 """
 
-añadirBote = """
+meterEnBote = """
 ¿Quién eres y cuanto vas a añadir al bote?
 """
 
