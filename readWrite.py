@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import payme
+import payme.Persona
+import payme.listaPersonas
 
 def mountPayme():
 	try:
@@ -26,26 +27,3 @@ def unmountPayme():
 
 	fileHandle.write(datos)
 	fileHandle.close()
-
-def registrarCompra():
-
-
-#def registrarPago():
-#
-#    def registarCompra(self):
-#        fileHandle = open("historial.txt", "w")
-#        registro = self.comprador.name + " ha compra por " + self.precio + " €, " + self.articulo
-#        fileHandle.write(registro)
-#        fileHandle.close()
-#
-#    def registrarPago(self):
-#        fileHandle = open("historial.txt", "w")
-#        registro = self.pagdor.name + " ha pagado " + self.precio + " €, " + self.articulo
-#        fileHandle.write(registro)
-#        fileHandle.close()
-#
-#    def registarDeuda(self):
-#        fileHandle = open("historial.txt", "w")
-#        registro = self.comprador.name + " devuelve " + self.precio + " € a self.pagador"
-#        fileHandle.write(registro)
-#        fileHandle.close()
